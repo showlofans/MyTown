@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Nongjia"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:text="农家乐"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/nongjia_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/nongjia_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/nongjia_search"
+            android:layout_toStartOf="@id/nongjia_search"
+            android:padding="10dp"
+            android:src="@drawable/location" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/nongjia_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp" >
+
+        <com.mycountry.utils.AutoPlayGallery
+            android:id="@+id/nongjiaAutoGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.mycountry.utils.RefreshableView
+        android:id="@+id/refreshable_view_nongjia"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/lvNongjia"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:minHeight="20dp" >
+        </ListView>
+    </com.mycountry.utils.RefreshableView>
+
+</LinearLayout>

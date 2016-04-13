@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myvillage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="14"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/mycountry"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f0f0f0" >
+
+        <!-- 第一行 -->
+
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_culture"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/culture"
+                    android:background="@drawable/home_action_btn"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="@string/culture" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/note"
+                android:background="@drawable/home_action_btn"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/note" />
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_calendar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/calendar"
+                    android:background="@drawable/home_action_btn"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="@string/calendar" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_camera"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/camera"
+                android:background="@drawable/home_action_btn"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/image" />
+        </TableRow>
+    </TableLayout>
+
+</TableLayout>

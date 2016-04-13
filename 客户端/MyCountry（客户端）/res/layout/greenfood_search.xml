@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/green_search"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top" >
+
+        <ImageView
+            android:id="@+id/back_greenfood"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_action_btn"
+            android:clickable="true"
+            android:onClick="onBackBtnClick"
+            android:padding="10dp"
+            android:src="@drawable/navigation_back" />
+
+        <TextView
+            android:id="@+id/sarch_greenfood_search"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|end"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@id/sarch_greenfood_search"
+            android:layout_toRightOf="@id/back_greenfood"
+            android:background="@drawable/shape_edit"
+            android:drawableLeft="@drawable/search"
+            android:ems="10"
+            android:hint="请输入搜索商家或商品" />
+    </RelativeLayout>
+
+   <com.mycountry.utils.RefreshableView
+        android:id="@+id/refreshable_view_green"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/lvGreen_search"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:minHeight="20dp" >
+        </ListView>
+    </com.mycountry.utils.RefreshableView>
+</LinearLayout>

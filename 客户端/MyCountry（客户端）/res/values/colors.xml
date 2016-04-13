@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="tab_title_normal_color">#dcdcdc</color>
+    <color name="tab_title_pressed_color">#ffffff</color>
+    <color name="tab_middle_line_color">#ffffff</color>
+    <color name="gray">#848288</color>
+    <color name="deep_white">#c8c8c8</color>
+    <color name="deep">#4c4c4c</color>
+    <color name="background">#656363</color>
+    <color name="top">#4c4c4c</color>
+    <color name="text_color">#c2c3c5</color>
+</resources>

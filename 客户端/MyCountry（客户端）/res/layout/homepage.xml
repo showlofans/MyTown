@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myvillage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:columnCount="14"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top" >
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_action_btn"
+            android:clickable="true"
+            android:onClick="onBackBtnClick"
+            android:padding="10dp"
+            android:src="@drawable/imagepic_40" />
+
+        <ImageButton
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top_action_btn"
+            android:onClick="onSendBtnClick"
+            android:padding="10dp"
+            android:src="@drawable/location" />
+
+        <EditText
+            android:id="@+id/edt_search_homepage"
+            android:layout_width="200dp"
+            android:layout_height="45dip"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/location"
+            android:layout_toRightOf="@+id/menu"
+            android:background="@drawable/shape_edit"
+            android:drawableLeft="@drawable/search"
+            android:ems="10"
+            android:hint="请输入搜索商家或商品" >
+        </EditText>
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 第一行 -->
+
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:id="@+id/tv_tour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableTop="@drawable/tour1"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="@string/tour" />
+
+                <TextView
+                    android:id="@+id/tv_techan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableTop="@drawable/techan"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="@string/specialty" />
+
+                <TextView
+                    android:id="@+id/tv_vegetable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableTop="@drawable/fruit"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="蔬菜" />
+
+                <TextView
+                    android:id="@+id/tv_meat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableTop="@drawable/meat"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="肉类" />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- 第二行 -->
+
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="#ffffff"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_ganhuo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableTop="@drawable/ganhuo"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="干货" />
+
+                <TextView
+                    android:id="@+id/tv_fruit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableTop="@drawable/fruit"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="水果" />
+
+                <TextView
+                    android:id="@+id/tv_liangyou"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableTop="@drawable/liangyou"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="粮油" />
+
+                <TextView
+                    android:id="@+id/tv_wine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableTop="@drawable/jiu"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="酒" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f0f0f0" >
+
+            <!-- 第一行 -->
+
+            <TableRow>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_push1"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_action_btn"
+                        android:drawableRight="@drawable/push1"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="超值优惠"
+                        android:textColor="#FF4040"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_push2"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableRight="@drawable/push2"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="周边游"
+                    android:textColor="#CDBE70"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_push3"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_action_btn"
+                        android:drawableRight="@drawable/push3"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="万圣狂欢节"
+                        android:textColor="#00C5CD"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_push4"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_action_btn"
+                    android:drawableRight="@drawable/push4"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="黄金十月"
+                    android:textColor="#00CD00"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:paddingBottom="10dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="0dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:text="猜你喜欢" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/line" />
+    </TableLayout>
+    <!--
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:fadingEdge="none"
+        android:fillViewport="true" >
+    -->
+
+
+    <!-- </ScrollView> -->
+
+    <LinearLayout
+        android:id="@+id/pagelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/errorpage"
+            layout="@layout/item_published_grida"
+            android:visibility="gone" />
+
+        <com.mycountry.utils.RefreshableView
+            android:id="@+id/refreshable_view_push"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/lvPush"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:minHeight="20dp"
+                android:paddingTop="10dp" >
+            </ListView>
+        </com.mycountry.utils.RefreshableView>
+    </LinearLayout>
+
+</LinearLayout>

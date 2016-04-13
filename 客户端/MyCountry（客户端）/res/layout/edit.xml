@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top" >
+
+        <Button
+            android:id="@+id/cancle_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/top_action_btn"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/edit_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="发表新内容"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/sent_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/top_action_btn"
+            android:gravity="center_vertical"
+            android:text="发表"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="标题"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:ems="10"
+        android:hint="请输入您的标题" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="正文"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/note_content"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="top|left"
+        android:hint="请输入您的正文"
+        android:inputType="textMultiLine" >
+        <requestFocus />
+    </EditText>
+
+    <!-- <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/top_action_btn"
+            android:text="拍照上传"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/selete_image"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/top_action_btn"
+            android:layout_weight="1"
+            android:text="相册选取"
+            android:textColor="#ffffff" />
+    </LinearLayout> -->
+
+<GridView
+    android:id="@+id/img_grid"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:horizontalSpacing="2dp"
+    android:numColumns="4"
+    android:scrollbars="none"
+    android:verticalSpacing="5dp" />
+<!-- <TextView
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="添加图片"
+    ></TextView> -->
+ 
+</LinearLayout>

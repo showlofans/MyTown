@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.menutab"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- //短信验证码所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+   <!--  //百度地图所需权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Pi7ysgIwIUoczk6OGbN9SVt8" />
+        <!-- //聚合数据 -->
+        <meta-data
+            android:name="JUHE_KEY"
+            android:value="5d2074ac87b1a620987778759c311e09" />
+
+        <activity
+            android:name="com.mycountry.activity.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mycountry.activity.AddFruit" />
+        <activity
+            android:name="com.mycountry.activity.Poupic"
+            android:theme="@style/Holo" />
+        <activity
+            android:name="com.mycountry.pic.ImageGridActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.mycountry.pic.TestPicActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.mycountry.pic.PhotoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.mycountry.menu.MyCountryAbout"
+            android:theme="@style/Holo" />
+            <!-- //百度地图service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+	<!-- 	//短信验证码 -->
+        <!--
+             <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        -->
+        <provider
+            android:name="com.mycountry.dao.ShoppingProvider"
+            android:authorities="com.mycountry.details" />
+
+        <activity android:name="com.mycountry.activity.BaiduMap" />
+        <activity android:name="com.mycountry.activity.ThableHostActivity" />
+        <activity android:name="com.mycountry.activity.MyCountryActivity" />
+        <activity android:name="com.mycountry.activity.HomepageActivity" 
+            />
+        <activity android:name="com.mycountry.activity.ImageActivity" />
+        <activity android:name="com.mycountry.activity.Calendar" />
+        <activity android:name="com.mycountry.activity.EditActivity" />
+        <activity android:name="com.mycountry.activity.SMSActivity" />
+        <activity android:name="com.mycountry.activity.CaptchaActivity" />
+        <activity android:name="com.mycountry.activity.CaptchaApplication" />
+        <activity android:name="com.mycountry.map.Map" />
+        <activity android:name="com.mycountry.activity.MainActivity" />
+        <activity android:name="com.mycountry.activity.AddNote" />
+        <activity android:name="com.mycountry.activity.AddCulture" />
+        <activity android:name="com.mycountry.activity.Imagehello" />
+        <activity android:name="com.mycountry.menu.MessageActivity" />
+        <activity android:name="com.mycountry.menu.LoginActivity" />
+        <activity android:name="com.mycountry.menu.RegisterActivity" />
+        <activity android:name="com.mycountry.menu.SettingsActivity" />
+        <activity android:name="com.mycountry.menu.MeActivity" />
+        <activity android:name="com.mycountry.menu.SuccessActivity" />
+        <activity android:name="com.mycountry.family.BrowseNewsActivity" />
+        <activity android:name="com.mycountry.service.PifaService" />
+        <activity android:name="com.mycountry.service.NoteService" />
+        <activity android:name="com.mycountry.service.GreenService" />
+        <activity android:name="com.mycountry.service.GreenSearch" />
+        <activity android:name="com.mycountry.service.NongjiaService" />
+        <activity android:name="com.mycountry.service.TourService" />
+        <activity android:name="com.mycountry.service.TechanService" />
+        <activity android:name="com.mycountry.service.VegetableService" />
+        <activity android:name="com.mycountry.service.MeatService" />
+        <activity android:name="com.mycountry.service.GanhuoService" />
+        <activity android:name="com.mycountry.service.FruitService" />
+        <activity android:name="com.mycountry.service.LiangyouService" />
+        <activity android:name="com.mycountry.service.WineService" />
+        <activity android:name="com.mycountry.service.Push1Service" />
+        <activity android:name="com.mycountry.service.Push2Service" />
+        <activity android:name="com.mycountry.service.Push3Service" />
+        <activity android:name="com.mycountry.service.Push4Service" />
+        <activity android:name="com.mycountry.service.CultureService" />
+        <activity android:name="com.mycountry.service.UserService" />
+        <activity android:name="com.mycountry.service.CollectService" />
+        <activity android:name="com.mycountry.service.BusinessService" />
+        <activity android:name="com.mycountry.details.TourDetail" />
+        <activity android:name="com.mycountry.details.TechanDetail" />
+        <activity android:name="com.mycountry.details.VegetableDetail" />
+        <activity android:name="com.mycountry.details.MeatDetail" />
+        <activity android:name="com.mycountry.details.GanhuoDetail" />
+        <activity android:name="com.mycountry.details.FruitDetail" />
+        <activity android:name="com.mycountry.details.LiangyouDetail" />
+        <activity android:name="com.mycountry.details.WineDetail" />
+        <activity android:name="com.mycountry.details.GreenDetail" />
+        <activity android:name="com.mycountry.details.NongjiaDetail" />
+        <activity android:name="com.mycountry.details.BusinessDetail" />
+        <activity android:name="com.mycountry.details.CultureDetail" />
+        <activity android:name="com.mycountry.details.PushDetail" />
+        <activity android:name="com.mycountry.details.NoteDetail" />
+    </application>
+
+</manifest>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/success">
+<RelativeLayout 
+        android:background="@color/top" 
+        android:id="@+id/layout_top" 
+        android:layout_height="50dip" 
+        android:layout_width="match_parent">
+        <Button 
+            android:id="@+id/back_success"
+            android:src="@drawable/menu" 
+            android:gravity="center_vertical"
+            android:background="@drawable/back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" 
+            android:layout_marginTop="13dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="注册成功" 
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+  </RelativeLayout>
+  
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="30dp"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/success"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+ <TextView 
+     android:paddingTop="20dp"
+     android:id="@+id/User_Name" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:padding="10px" 
+     android:text="@string/User_Name" /> 
+  <TextView 
+      android:id="@+id/Password" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:padding="10px" 
+      android:text="@string/Password" /> 
+  <TextView 
+      android:id="@+id/Email" 
+      android:padding="10px" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:text="@string/Email" />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_weight="0.25" >
+  <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="1"
+      android:text="@string/login" />
+
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="50dp"
+      android:layout_marginRight="10dp"
+      android:layout_weight="1"
+      android:text="@string/out" />
+</LinearLayout>    
+</LinearLayout>

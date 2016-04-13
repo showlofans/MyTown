@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_action_btn"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/top_action_btn"
+        android:orientation="horizontal"
+        android:paddingEnd="100dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingStart="50dp" >
+
+        <ImageView
+            android:id="@+id/headImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/imagepic" />
+
+        <TextView
+            android:id="@+id/headname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:text="王小帅"
+            android:textColor="@color/text_color"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="0dp"
+        android:paddingStart="50dp"
+        android:src="@drawable/line" />
+
+    <Button
+        android:id="@+id/btn_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_action_btn"
+        android:drawableLeft="@drawable/notice"
+        android:drawableStart="@drawable/notice"
+        android:paddingBottom="10dp"
+        android:paddingEnd="110dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="110dp"
+        android:paddingStart="50dp"
+        android:paddingTop="10dp"
+        android:text="我的消息"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_action_btn"
+        android:drawableLeft="@drawable/favour"
+        android:drawableStart="@drawable/favour"
+        android:paddingBottom="10dp"
+        android:paddingEnd="110dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="110dp"
+        android:paddingStart="50dp"
+        android:paddingTop="10dp"
+        android:text="我的收藏"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="0dp"
+        android:paddingStart="50dp"
+        android:src="@drawable/line" />
+
+    <Button
+        android:id="@+id/menu_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_action_btn"
+        android:drawableLeft="@drawable/register"
+        android:drawableStart="@drawable/register"
+        android:paddingBottom="10dp"
+        android:paddingEnd="146dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="146dp"
+        android:paddingStart="50dp"
+        android:paddingTop="10dp"
+        android:text="注册"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/menu_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_action_btn"
+        android:drawableLeft="@drawable/rocket"
+        android:drawableStart="@drawable/rocket"
+        android:paddingBottom="10dp"
+        android:paddingEnd="146dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="146dp"
+        android:paddingStart="50dp"
+        android:paddingTop="10dp"
+        android:text="登录"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_action_btn"
+        android:drawableLeft="@drawable/settings_white"
+        android:drawableStart="@drawable/settings_white"
+        android:paddingBottom="10dp"
+        android:paddingEnd="146dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="146dp"
+        android:paddingStart="50dp"
+        android:paddingTop="10dp"
+        android:text="设置"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

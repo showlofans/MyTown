@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ff303537"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top" >
+
+        <Button
+            android:id="@+id/sms_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/top_action_btn"
+            android:gravity="center_vertical"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/sms_login"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/top_action_btn"
+            android:gravity="center_vertical"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

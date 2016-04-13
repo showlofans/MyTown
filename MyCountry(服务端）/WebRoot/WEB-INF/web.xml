@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GroupServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.GroupServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JoinServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.JoinServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PifaServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.PifaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoteServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.NoteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CollectServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.CollectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GreenServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.GreenServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TourServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.TourServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FruitServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.FruitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TechanServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.TechanServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MeatServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.MeatServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VegetableServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.VegetableServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GanhuoServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.GanhuoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LiangyouServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.LiangyouServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WineServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.WineServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CultureServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.CultureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CultivationServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.CultivationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PushServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.PushServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.mycountry.image.UploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NongjiaServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.NongjiaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BusinessServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.BusinessServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GreenServlet2</servlet-name>
+    <servlet-class>com.mycountry.servlet.GreenServlet2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Push1Servlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.Push1Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Push2Servlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.Push2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Push3Servlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.Push3Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Push4Servlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.Push4Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GreenPushServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.GreenPushServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GreenFoodPictureServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.GreenFoodPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.mycountry.servlet.SearchServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet-mapping>
+    <servlet-name>GroupServlet</servlet-name>
+    <url-pattern>/Servlet/GroupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JoinServlet</servlet-name>
+    <url-pattern>/Servlet/JoinServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PifaServlet</servlet-name>
+    <url-pattern>/Servlet/PifaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoteServlet</servlet-name>
+    <url-pattern>/Servlet/NoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CollectServlet</servlet-name>
+    <url-pattern>/Servlet/CollectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GreenServlet</servlet-name>
+    <url-pattern>/Servlet/GreenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TourServlet</servlet-name>
+    <url-pattern>/Servlet/TourServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FruitServlet</servlet-name>
+    <url-pattern>/Servlet/FruitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TechanServlet</servlet-name>
+    <url-pattern>/Servlet/TechanServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MeatServlet</servlet-name>
+    <url-pattern>/Servlet/MeatServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VegetableServlet</servlet-name>
+    <url-pattern>/Servlet/VegetableServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GanhuoServlet</servlet-name>
+    <url-pattern>/Servlet/GanhuoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LiangyouServlet</servlet-name>
+    <url-pattern>/Servlet/LiangyouServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CultivationServlet</servlet-name>
+    <url-pattern>/Servlet/CultivationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CultureServlet</servlet-name>
+    <url-pattern>/Servlet/CultureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PushServlet</servlet-name>
+    <url-pattern>/Servlet/PushServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WineServlet</servlet-name>
+    <url-pattern>/Servlet/WineServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/Servlet/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NongjiaServlet</servlet-name>
+    <url-pattern>/Servlet/NongjiaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BusinessServlet</servlet-name>
+    <url-pattern>/Servlet/BusinessServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/Servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GreenServlet2</servlet-name>
+    <url-pattern>/Servlet/GreenServlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Push1Servlet</servlet-name>
+    <url-pattern>/Servlet/Push1Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Push2Servlet</servlet-name>
+    <url-pattern>/Servlet/Push2Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Push3Servlet</servlet-name>
+    <url-pattern>/Servlet/Push3Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Push4Servlet</servlet-name>
+    <url-pattern>/Servlet/Push4Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GreenPushServlet</servlet-name>
+    <url-pattern>/Servlet/GreenPushServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GreenFoodPictureServlet</servlet-name>
+    <url-pattern>/Servlet/GreenFoodPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/servlet/SearchServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
